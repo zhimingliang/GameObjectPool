@@ -4,7 +4,12 @@
 ## 轻量化
 > 和业务接入的定制化部分自行处理
 ## 设计
-
+- GameObjectPool 
+  - 资源缓存池的核心类
+- CPooledGameObject
+  - 资源脚本类,用来将资源和缓存池建立连接
+- ResourceManager
+  - 资源管理类: 各个项目定制即可,示例提供的脚本为了串联逻辑
 ## 性能
 > 和SpawnPool缓存池插件的性能对比
 测试用例： 对外接口完全一致,替换EffectFactory文件,10w次获取资源操作:
